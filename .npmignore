@@ -1,0 +1,7 @@
+.jshintrc
+.vscode
+logs
+*.log
+dynatrace-oneagent-*.tgz
+npm-debug.log*
+/test
