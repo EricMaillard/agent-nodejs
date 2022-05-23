@@ -13,14 +13,14 @@ make sure that there isn't already a marketplace integration or buildpack availa
 * Run `$ npm install git + https://github.com/EricMaillard/agent-nodejs.git` in your project directory
 * Run that API request to get tenantUUID, tenantToken and communicationEndpoints:
 * For Dynatrace Managed:
-*     curl -X GET https://{your-domain}/e/{your-environment-id}/api/v1/deployment/installer/agent/connectioninfo -H "accept: application/json" -H "Authorization: Api-Token pass_token"
+     curl -X GET https://{your-domain}/e/{your-environment-id}/api/v1/deployment/installer/agent/connectioninfo -H "accept: application/json" -H "Authorization: Api-Token pass_token"
 * For Dynatrace SaaS:
-*     curl -X GET https://{your-environment-id}.live.dynatrace.com/api/v1/deployment/installer/agent/connectioninfo -H "accept: application/json" -H "Authorization: Api-Token pass_token"
+     curl -X GET https://{your-environment-id}.live.dynatrace.com/api/v1/deployment/installer/agent/connectioninfo -H "accept: application/json" -H "Authorization: Api-Token pass_token"
 * This request will return that paylaod:
 *    "tenantUUID" : "<tenant uuid>",
 *    "tenantToken" : "<tenant token>"
 *    "communicationEndpoints" : [ <endpoint1>, <endpoint2>, <endpoint3> ]
-*
+
 * Using the returned data add the following code block as first statement to your application
 
 ```js
