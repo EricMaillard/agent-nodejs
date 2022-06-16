@@ -10,7 +10,7 @@ make sure that there isn't already a marketplace integration or buildpack availa
 * Click on "Deploy Dynatrace"
 * Click on "Set up PaaS Integration"
 * Generate a PaaS token
-* Run `$ npm install git + https://github.com/EricMaillard/agent-nodejs.git` in your project directory
+* Run `$ npm install git+https://github.com/EricMaillard/agent-nodejs.git` in your project directory
 * Run that API request to get tenantUUID, tenantToken and communicationEndpoints:
 * For Dynatrace Managed:
      curl -X GET https://{your-domain}/e/{your-environment-id}/api/v1/deployment/installer/agent/connectioninfo -H "accept: application/json" -H "Authorization: Api-Token pass_token"
