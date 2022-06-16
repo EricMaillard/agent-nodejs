@@ -2,7 +2,6 @@
 
 var debug = require('debug')('dynatrace');
 var nodeagent = require('@dynatrace/oneagent-dependency');
-var request = require('./lib/request');
 
 var LambdaUtil = require('./lib/LambdaUtil');
 
